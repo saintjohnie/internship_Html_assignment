@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  color: white;
+}
+body {
+  background: #7b9e87;
+}
+.container {
+  width: 60%;
+  margin: auto;
+  height: 600px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  justify-content: space-evenly;
+  box-shadow: inset 1px 1px 10px rgb(248, 243, 244), 1px 1px 10px #5e747f;
+  background: -webkit-radial-gradient(#0f0e01, #7b9e87);
+}
+
+.container form {
+  margin: 0 auto;
+}
+
+.container div {
+  margin: 5px;
+  width: 100%;
+  display: block;
+}
+.container div input,
+.container div textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  color: purple;
+  font-weight: bolder;
+  margin: auto;
+}
+.container div * {
+  display: block;
+}
+button {
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+  color: purple;
+  display: block;
+  margin: auto;
+  width: 90%;
+  font-weight: bold;
+  border-radius: 5px;
+}
+hr {
+  margin-bottom: 30px;
+}
+h1 {
+  margin-top: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .container div input,
+  .container div textarea {
+    width: auto;
+  }
+  textarea {
+    column-rule-width: 30px;
+  }
+}
